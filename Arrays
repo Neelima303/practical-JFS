@@ -1,0 +1,166 @@
+package practice;
+
+import java.util.Scanner;
+
+// Initializes  outside the loop and modify changes inside print Statement outside 
+public class Array {
+
+	public static void main(String[] args) {
+////// for loop to calculate the sum of numbers from 0 to 5. 
+////// After adding each number, display the current value of the sum.
+		
+		int a=0;
+		for (int i=0;i<=5;i++) {
+			a=a+i;
+			System.out.println("A= "+a);
+		}	
+	}
+}
+
+/////// calculate the power of a given number using a for loop
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Base value: ");
+		int Base = sc.nextInt();
+		System.out.print("Enter the Power value: ");
+		int Power = sc.nextInt();
+
+		int result=1;
+		for(int i=1; i<=Power; i++) {
+			result=result*Base;
+		}
+		System.out.println("Total= "+result);
+sc.close();
+	}
+ }	
+	
+				
+//////for loop to print numbers from 1 to 20, where the loop variable is multiplied by 2 after 
+//////		each iteration. Display the value of i in each iteration.
+		
+		for (int i=1; i<=20; i++) {
+            System.out.println(i);
+            i*= 2;
+        }
+    }
+}
+
+
+//// why the for loop does not execute.  /////
+		 int i =1; 
+		for (    ; i>10;    ) 
+	     break;
+		 System.out.println(i);
+       i++;
+	}
+}
+
+public class Arrays {
+
+	public static void main(String[] args) {
+/////	1D Array /////
+		int arr [] = { 10, 20, 30, 40, 50 };
+		int cnt = 0; 
+		 for (int i=0;i<arr.length;i++) {
+			 if (arr[i]%2==0) 
+			 {
+			     System.out.print(arr[i]);
+				 cnt++;
+			 }
+		 }
+		 System.out.println(cnt);
+		}
+	}
+
+/////  2D Array////////
+		int arr [] [] = { {1,2,3},{4,5,6},{7,8,9} };
+		 for (int i=0;i<arr.length;i++) {
+			 for (int j=0;j<arr[i].length;j++) {
+				System.out.print(arr[i][j] + " ");
+			 }
+			 System.out.println();
+		 }
+	}
+}
+
+
+public class Array_4 {
+
+	public static void main(String[] args) {
+		
+      int arr[]= {10,20,30,'A',25,'B',50};
+      for(int i=0;i<arr.length;i++)
+      System.out.println(arr[i]);
+	}
+
+}
+
+
+
+public class AverageElements_Array {
+
+	public static void main(String[] args) {
+//	////Sum of Elements in Array	//////////
+		int [] numbers = {10,20,30,40};
+		int sum=0;
+		
+		for(int num : numbers) 
+		{
+			sum = sum + num;
+		}
+	  System.out.println("Sum of Elements in Array= " +sum);
+	}
+}
+
+
+///////  Average of elements in Array////////
+		int num[] = {10,20,30,40,50};
+		int sum=0;
+		
+		for (int i=0;i<num.length;i++)
+		{
+            sum=sum+num[i];
+		}
+		double Average =(double) sum / num.length;
+		{
+			System.out.println("Average of elements in Array: " +Average);
+		}
+	}
+}
+		
+		
+/////////    Second Largest Number in an Array/		
+    int []arr= { 10,20,4,50,59};
+		int largest = arr[0];
+		int second = arr[1];
+		 for (int i=0;i<arr.length;i++)
+		 {
+			 if (arr[i] > largest)
+			 {
+				 second = largest;
+				 largest = arr[i];
+			 }
+		 }
+		 System.out.println("largest number: "+largest);
+		 System.out.println("Second Largest number: "+second);
+	}
+}
+
+
+////////   Search am Elements in an Array
+          int arr[] = {10,20,45,65,83,80};
+          int search = 45;
+          boolean found = false;
+          
+          for (int i=0;i<arr.length;i++)
+          {
+        	  if (arr[i] == search) {
+        		  found = true;
+        	  System.out.println("Element is found at index: " +i);
+        	  break;
+          }
+	   }
+         if (found == false)
+        	 System.out.println("Elemnets not found");
+	}
+}
